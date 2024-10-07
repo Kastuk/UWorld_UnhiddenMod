@@ -4,6 +4,6 @@ That one just add Editor and Test buttons in main menu to edit and run custom ma
 
 Need UnclaimedWorldInjector modloader to work: https://github.com/Kastuk/UnclaimedWorldInjector/releases/tag/untidy
 
-Install: put dll into Steam\steamapps\common\Unclaimed World\Mods
+Install: put dll into **Steam\steamapps\common\Unclaimed World\Mods**
 
-Don't forget special editor keys, which written in Documents\Unclaimed World\Options.xml
+Don't forget special editor keys, which written in **Documents\Unclaimed World\Options.xml**
