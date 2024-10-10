@@ -25,7 +25,8 @@ namespace UncWorldMod_Unhidden
         public static MainMenuPanel menu;
 
         [HarmonyPatch(typeof(MainMenuPanel), "InitButtons")]//nameof(MainMenuPanel.InitButtons)]
-        private static void Postfix(ref MainMenuPanel __instance)
+        [HarmonyPostfix]
+        private static void MainMenuPostfix(ref MainMenuPanel __instance)
         {
             menu = __instance;
     //        MethodInfo dynMethod1 = __instance.GetType().GetMethod("btEditMap_Click",
@@ -37,18 +38,18 @@ namespace UncWorldMod_Unhidden
 
             TextButton textButton6 = new TextButton(__instance.Interface.gui);
             __instance.Window.Add(textButton6);
-            textButton6.Init(TextButton.TextButtonType.Black);
-            textButton6.Position = new Microsoft.Xna.Framework.Point(146, 76);
-            textButton6.Text = "EDITOR";
+            textButton6.Init(TextButton.TextButtonType.White);
+            textButton6.Position = new Microsoft.Xna.Framework.Point(142, 76);
+            textButton6.Text = "EDIT";
             textButton6.Click += btEditMap_Click;
-            textButton6.Width = 106;
+            textButton6.Width = 59;//106;
             TextButton textButton7 = new TextButton(__instance.Interface.gui);
             __instance.Window.Add(textButton7);
-            textButton7.Init(TextButton.TextButtonType.BlackSlim);
-            textButton7.Position = new Microsoft.Xna.Framework.Point(146, 45);
+            textButton7.Init(TextButton.TextButtonType.White);
+            textButton7.Position = new Microsoft.Xna.Framework.Point(198, 76);//(146, 45);
             textButton7.Text = "TEST";
             textButton7.Click += btTestMap_Click;
-            textButton7.Width = 106;
+            textButton7.Width = 59;//106;
         }
 
         // Token: 0x06000D96 RID: 3478 RVA: 0x00009EED File Offset: 0x000080ED
