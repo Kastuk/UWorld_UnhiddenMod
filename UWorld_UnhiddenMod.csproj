@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="MoreControls.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UhideMainMenuButtons.cs" />
+    <Compile Include="MainMenuFixes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

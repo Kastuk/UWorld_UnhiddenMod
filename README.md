@@ -3,7 +3,9 @@ First try to mod old good Unclaimed World game.
 Features:
 - add Editor and Test buttons in main menu to edit and run custom maps.
 - add shadows disabling (key O for now)
-- add mouse scroll feature to datasheet window (recipes of item)
+- add mouse scroll feature to datasheet window (recipes of item) - not fully stable at multiple windows
+- add sorting of savegames, descending by date
+- culture set to en-GB now for common day-month-year format
 
 Need UnclaimedWorldInjector modloader to work: https://github.com/Kastuk/UnclaimedWorldInjector/releases/tag/untidy
 
